@@ -17,7 +17,7 @@ function setup(){
     movingSprite.radius = 10;
     movingSprite.tile = 's';
     movingSprite.counter = 0;
-    movingSprite.debug = true;
+    //movingSprite.debug = true;
 
     wall = new Group();
     wall.tile = '1';
