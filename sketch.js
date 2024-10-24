@@ -82,6 +82,7 @@ function setup(){
     grid = new PF.Grid(matrix);
 
     let finder = new PF.AStarFinder();
+    //let finder = new PF.DijkstraFinder();
     path = finder.findPath(floor(movingSprite.x / tileSize), floor((movingSprite.y / tileSize)), 1, 1, grid);
 
     node = new Group();
@@ -95,10 +96,8 @@ function setup(){
         n.visible = false;
 
     }
-
-
 }// end setup
-
+ ZJERGHBOU;DNLAF
 function draw(){
 
     clear();
