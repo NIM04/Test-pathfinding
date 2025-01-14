@@ -83,7 +83,12 @@ function setup(){
 
     let finder = new PF.AStarFinder();
     //let finder = new PF.DijkstraFinder();
+
     path = finder.findPath(floor(movingSprite.x / tileSize), floor((movingSprite.y / tileSize)), 1, 1, grid);
+    
+    //if you want fewer nodes for speed reasons
+    //let newPath  = PF.Util.compressPath(grid, path);
+    //let newPath  = PF.Util.smoothenPath(grid, path);
 
     node = new Group();
     //node.visited = false;
@@ -96,8 +101,9 @@ function setup(){
         n.visible = false;
 
     }
+
 }// end setup
- ZJERGHBOU;DNLAF
+
 function draw(){
 
     clear();
@@ -119,7 +125,7 @@ function AIControls(){
     }
 
     else{
-        counter = 0;
+        movingSprite.counter == 0;
     }
 
 }
