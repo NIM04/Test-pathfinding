@@ -24,7 +24,7 @@ function setup(){
     wall.width = tileSize;
     wall.height = tileSize;
     wall.collider = 's';
-    wall.tile = '1';
+    //wall.tile = '1';
 
     map = new Tiles([
 "111111111111111111111111",
